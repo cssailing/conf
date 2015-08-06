@@ -1,0 +1,1 @@
+/home/xmlscript/.bashrc
