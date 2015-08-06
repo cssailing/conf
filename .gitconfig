@@ -1,0 +1,7 @@
+[user]
+	name = xmlscript
+	email = xmlscript@gmail.com
+[core]
+	editor = vim
+[push]
+	default = matching

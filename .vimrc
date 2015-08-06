@@ -1,0 +1,10 @@
+set nu
+set cursorline
+set tabstop=2
+set backspace=2
+syn on
+set showmatch
+set smartindent
+set shiftwidth=2
+set autoindent
+set ai!
