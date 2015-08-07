@@ -4,12 +4,20 @@ set backspace=2 "
 syn on
 set showmatch
 
+if has("autocmd")
+  "ts=tabstop
+  "sts=softtabstop
+  "sw=shiftwidth
+  "au=autocmd
+  filetype on
+
+  au FileType html,css,javascript,xml,json setlocal ts=2 sts=2 sw=2 expandtab
+  au FileType apache setlocal ts=4 sts=4 sw=4 expandtab
+
+  au BufNewFile,BufRead *.rss,*.atom setfiletype xml
+endif
+
 "TAB
-set tabstop=2 "
-set shiftwidth=2
-set softtabstop=2
-set shiftwidth=2
-set expandtab
 set smarttab
 
 
@@ -35,7 +43,7 @@ set ls=2 "laststatus=2
 set ch=2
 
 set hlsearch
-set incsearch
+set ic "incsearch 忽略大小写
 
 set nobackup
 set noswapfile
@@ -43,15 +51,14 @@ set noswapfile
 set autochdir
 
 
-set showcmd
 
 set scrolloff=6
 
 
 set wrap
+set nowrapscan
 set helplang=cn
 
-filetype on
 
 
 set ruler
@@ -75,3 +82,5 @@ hi statusline guibg=#696969 guifg=#B8860B
 if exists("tags")
   set tags=./tags
 endif
+
+set list "
