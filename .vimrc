@@ -40,7 +40,10 @@ set magic "regex
 set background=dark
 set mouse=a
 set ls=2 "laststatus=2
+set cmdheight=1
 set ch=2
+
+set backspace=indent,eol,start
 
 set hlsearch
 set ic "incsearch 忽略大小写
@@ -50,6 +53,8 @@ set noswapfile
 
 set autochdir
 
+set foldlevel=5
+set foldmethod=syntax
 
 
 set scrolloff=6
