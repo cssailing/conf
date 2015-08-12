@@ -3,7 +3,6 @@
 	"auto_complete_cycle": true,
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"close_windows_when_empty": true,
 	"color_scheme": "Packages/User/SublimeLinter/Solarized (Dark) (SL).tmTheme",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
