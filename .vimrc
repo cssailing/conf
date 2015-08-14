@@ -1,4 +1,5 @@
 set nu
+colorscheme desert
 set cursorline "
 set backspace=2 "
 syn on
