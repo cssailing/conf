@@ -1,7 +1,11 @@
-127.0.0.1		localhost.localdomain localhost
-::1		localhost6.localdomain6 localhost6
+127.0.0.1 localhost.localdomain localhost
+::1 localhost6.localdomain6 localhost6
 
-127.0.0.1 114so.cn
+#deny
+127.0.0.1 daohang.114so.cn www.dnserror.cn
 
 
-127.0.0.1	test.com www.test.com
+127.0.0.1 xdebug.dev
+
+#vhost
+127.0.0.1 test.com www.test.com
