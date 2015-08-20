@@ -17,7 +17,11 @@ if has("autocmd")
   au BufNewFile,BufRead *.rss,*.atom setfiletype xml
 endif
 
+
 set cindent "C language only
+
+
+
 
 set shortmess=alI "unknow
 
@@ -29,14 +33,17 @@ set ch=2
 
 set bs=indent,eol,start "backspace
 
+
 set foldlevel=5
 set foldmethod=syntax
 
+
 set so=3 "scrolloff
+
 
 highlight StatusLine cterm=bold ctermfg=yellow ctermbg=blue
 
-"设置状态栏根据不同状态显示不同颜色:
+"设置状态栏根据不同状态显示不同颜色:          j 
 function! InsertStatuslineColor(mode)
     if a:mode == 'i'
         hi statusline guibg=peru
@@ -55,5 +62,5 @@ if exists("tags")
   set tags=./tags
 endif
 
-set lcs=eol:↵,trail:▒
+set lcs=trail:▒
 
