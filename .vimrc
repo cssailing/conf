@@ -1,8 +1,8 @@
-set nu
-set cursorline "
+set nu is ic sta ai si ar awa ru lbr cul sm list
+set noswf nobk nows
+
+colo desert
 set backspace=2 "
-syn on
-set showmatch
 
 if has("autocmd")
   "ts=tabstop
@@ -17,59 +17,33 @@ if has("autocmd")
   au BufNewFile,BufRead *.rss,*.atom setfiletype xml
 endif
 
-"TAB
-set smarttab
 
-
-set ai "autoindent
-set si "smartindent
 set cindent "C language only
 
-set nocompatible
 
 
-set shell=bash
 
-set autoread "reload vimrc
-
-syntax enable
 set shortmess=alI "unknow
-set lbr "unknow
 
-set magic "regex
 set background=dark
 set mouse=a
 set ls=2 "laststatus=2
 set cmdheight=1
 set ch=2
 
-set backspace=indent,eol,start
+set bs=indent,eol,start "backspace
 
-set hlsearch
-set ic "incsearch 忽略大小写
-
-set nobackup
-set noswapfile
-
-set autochdir
 
 set foldlevel=5
 set foldmethod=syntax
 
 
-set scrolloff=6
+set so=3 "scrolloff
 
 
-set wrap
-set nowrapscan
-set helplang=cn
-
-
-
-set ruler
 highlight StatusLine cterm=bold ctermfg=yellow ctermbg=blue
 
-"设置状态栏根据不同状态显示不同颜色
+"设置状态栏根据不同状态显示不同颜色:          j 
 function! InsertStatuslineColor(mode)
     if a:mode == 'i'
         hi statusline guibg=peru
@@ -88,4 +62,5 @@ if exists("tags")
   set tags=./tags
 endif
 
-set list "
+set lcs=trail:▒
+
