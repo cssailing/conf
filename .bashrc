@@ -12,7 +12,12 @@ fi
 
 PS1="[\u@\h \[\e[0;33m\]\w\[\e[0m\]]$ "
 
-EDITOR='vim'
+EDITOR=vim
+
+pushd -n /var/websites/test.com/www
+pushd -n /usr/share
+pushd -n /etc/httpd/conf
+pushd -n /etc/yum.repos.d
 
 alias df='df -h' 2>/dev/null
 alias cat='cat -nb' 2>/dev/null
