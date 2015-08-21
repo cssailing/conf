@@ -14,10 +14,10 @@ PS1="[\u@\h \[\e[0;33m\]\w\[\e[0m\]]$ "
 
 EDITOR=vim
 
-pushd -n /var/websites/test.com/www
-pushd -n /usr/share
-pushd -n /etc/httpd/conf
-pushd -n /etc/yum.repos.d
+pushd -n /var/websites/test.com/www 1>/dev/null
+pushd -n /usr/share 1>/dev/null
+pushd -n /etc/httpd/conf 1>/dev/null
+pushd -n /etc/yum.repos.d 1>/dev/null
 
 alias df='df -h' 2>/dev/null
 alias cat='cat -nb' 2>/dev/null
