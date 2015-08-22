@@ -6,6 +6,8 @@
 </head>
 <body>
   <h1>test for coding.net PaaS</h1>
+  <p>搞啥呢？更新木有体现出来<?='，现在已经支持PHP了'?>。</p>
+  <p><?php echo __FILE__?></p>
   <pre>
    <?='test'?>
 <?=`pwd`?>
@@ -14,5 +16,6 @@
 ?>
     <?=`ll -a`?>
   </pre>
+  <?=phpinfo()?>
 </body>
 </html>
