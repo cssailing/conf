@@ -26,16 +26,11 @@ set cindent "C language only
 set shortmess=alI "unknow
 
 set background=dark
-set mouse=a
 set ls=2 "laststatus=2
 set cmdheight=1
 set ch=2
 
 set bs=indent,eol,start "backspace
-
-
-set foldlevel=5
-set foldmethod=syntax
 
 
 set so=3 "scrolloff
