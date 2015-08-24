@@ -1,61 +1,9 @@
-set nu is ic sta ai si ar awa ru lbr cul sm list
-set noswf nobk nows
-
+syn enable
 colo desert
-set backspace=2 "
 
-if has("autocmd")
-  "ts=tabstop
-  "sts=softtabstop
-  "sw=shiftwidth
-  "au=autocmd
-  filetype on
+se nu rnu is ic sta ai si ar awa ru lbr cul sm list
+se noswf nobk "nows
+se bs=2 ls=2 ch=2 so=5 bg=dark shm=taoWAIT lcs=trail:▒ cc=80
+se ts=2 sts=2 sw=2 et
 
-  au FileType html,css,javascript,xml,json setlocal ts=2 sts=2 sw=2 expandtab
-  au FileType apache setlocal ts=4 sts=4 sw=4 expandtab
-
-  au BufNewFile,BufRead *.rss,*.atom setfiletype xml
-endif
-
-
-set cindent "C language only
-
-
-
-
-set shortmess=alI "unknow
-
-set background=dark
-set ls=2 "laststatus=2
-set cmdheight=1
-set ch=2
-
-set bs=indent,eol,start "backspace
-
-
-set so=3 "scrolloff
-
-
-highlight StatusLine cterm=bold ctermfg=yellow ctermbg=blue
-
-"设置状态栏根据不同状态显示不同颜色:          j 
-function! InsertStatuslineColor(mode)
-    if a:mode == 'i'
-        hi statusline guibg=peru
-    elseif a:mode == 'r'
-        hi statusline guibg=blue
-    else
-        hi statusline guibg=red
-    endif
-endfunction
-au InsertEnter * call InsertStatuslineColor(v:insertmode)
-au InsertLeave * hi statusline guibg=#9932CC guifg=white
-hi statusline guibg=#696969 guifg=#B8860B
-
-
-if exists("tags")
-  set tags=./tags
-endif
-
-set lcs=trail:▒
-
+se foldlevel=10 fdm=syntax
