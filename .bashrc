@@ -22,10 +22,10 @@ pushd -n /etc/yum.repos.d >/dev/null
 alias df='df -h' 2>/dev/null
 alias cat='cat -nb' 2>/dev/null
 alias ls='ls -X --color=auto' 2>/dev/null
-alias ll='ls -lh' 2>/dev/null
+alias ll='ls -Slh' 2>/dev/null
 alias lla='ll -A' 2>/dev/null
 alias ll.='lla' 2>/dev/null
-alias ..='cd ..' 2>/dev/null
-alias ...='cd ../..' 2>/dev/null
+alias ..='clear && cd ..' 2>/dev/null
+alias :q='exit'
 
 notify-send -i /usr/share/icons/gnome/48x48/apps/gnome-terminal.png -a title term welcome..
