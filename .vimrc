@@ -1,5 +1,6 @@
 sy on
 colo solarized
+"colo desert
 
 
 se nu rnu is ic sta ai si ar ru lbr cul sm acd hid fen list
@@ -9,7 +10,7 @@ se ts=2 sts=2 sw=2 et
 
 au FileType php call Get_defined_functions()
 fun Get_defined_functions()
- "php -r 'echo join(get_function_defined_functions()['internal'],PHP_EOL);'
+ "php -r "echo join(get_defined_functions()['internal'],PHP_EOL);"
   se cpt+=k$VIM/get_defined_functions.md
 endfun
 
